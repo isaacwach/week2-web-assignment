@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
     <h1>Welcome to our classy food display</h1>
     <div class="image-container">
         <div class="image">
