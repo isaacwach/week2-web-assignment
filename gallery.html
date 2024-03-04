@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles/gallery.css">
 </head>
 <body>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
     <h1>Welcome to natures finest display</h1>
     <h2>Enjoy scrolling through aesthetic art workto lift your moods</h2>
     <div class="gallery">
