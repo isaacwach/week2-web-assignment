@@ -7,23 +7,16 @@
     <link rel="stylesheet" href="styles/gallery.css">
 </head>
 <body>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            });
-    </script>
-    <div class="carousel-container">
-        <h1>Welcome to Nature's Finest Display</h1>
-        <h2>Enjoy scrolling through aesthetic artwork to lift your mood</h2>
-        <div class="carousel">
-            <div class="slide"><img src="images/nature.jpeg" alt=""></div>
-            <div class="slide"><img src="images/nature1.jpeg" alt=""></div>
-            <div class="slide"><img src="images/nature2.png" alt=""></div>
-            <div class="slide"><img src="images/nature3.png" alt=""></div>
-            <div class="slide"><img src="images/nature4.png" alt=""></div>
-            <div class="slide"><img src="images/nature5.png" alt=""></div>
+    <div class="gallery-container">
+        <h1 class="gallery-title">Welcome to Nature's Finest Display</h1>
+        <h2 class="gallery-subtitle">Enjoy scrolling through aesthetic artwork to lift your mood</h2>
+        <div class="photo-grid">
+            <div class="photo"><img src="images/nature.jpeg" alt=""></div>
+            <div class="photo"><img src="images/nature1.jpeg" alt=""></div>
+            <div class="photo"><img src="images/nature2.png" alt=""></div>
+            <div class="photo"><img src="images/nature3.png" alt=""></div>
+            <div class="photo"><img src="images/nature4.png" alt=""></div>
+            <div class="photo"><img src="images/nature5.png" alt=""></div>
         </div>
     </div>
 </body>
